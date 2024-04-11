@@ -1,0 +1,62 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# File Path.
+#--------------------------------------------------------------------------------------------
+video_path:                 "/home/kvlton/avp_ws/src/avp_data/capture_44/rear.avi"
+
+# 视频流的时间戳
+frame_info_file:            "/home/kvlton/avp_ws/src/avp_data/capture_44/video_frame_info"  
+fisheye_distortion_file:    "/home/kvlton/orb_slam/ORB_SLAM3-master/utils/AT106.txt"
+
+# 0表示为第一段轨迹 自动清空之前的时间戳
+start_frame_index:          823
+start_frame_time:           245
+final_frame_time:           275
+
+image_save_path:            "/home/kvlton/orb_slam/captures/44"
+
+#--------------------------------------------------------------------------------------------
+# Fisheye Undistort Parameters.
+#--------------------------------------------------------------------------------------------
+
+# 是否对鱼眼图像进行矫正
+undistort_flag:             1       
+
+# 0:畸变表  1:畸变参数
+correct_choice:             0      
+pixel_size:                 0.003
+
+Fisheye.fx:                 316.6
+Fisheye.fy:                 316.6
+Fisheye.cx:                 640
+Fisheye.cy:                 360
+Fisheye.width:              1280
+Fisheye.height:             720
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.fx: 300.0
+Camera.fy: 300.0
+Camera.cx: 360.0
+Camera.cy: 350.0
+
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+Camera.k3: 0.0
+
+# Camera frames per second 
+Camera.fps: 10.0
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Camera resolution
+Camera.width: 720
+Camera.height: 480
+
